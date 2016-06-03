@@ -1,0 +1,34 @@
+Achiever			Doubles points receieved for killing enemies
+Activator			Multiplies all stats by 2.5 for 5 seconds after every 15 seconds
+Adaptability		Increases defense the more enemies there are
+Analytical			Slows down enemy attacks
+Arranger			Increases all stats the more enemies there are
+Belief				Increases range of uber attack
+Command				Knocks back enemies when they touch you
+Communication		Knocks back all enemies
+Competition			Increases offense the more enemies there are
+Connectedness		Deals damage to all enemies when 1 is hit
+Consistency			Averages offense, defense, and speed
+Context				Doubles offense and defense if in the center of screen
+Deliberative		Attacks deal knockback
+Developer			Increases offense based on the number of enemies alive and how long each one has been alive
+Discipline			Increases offense and defense the LESS enemies there are
+Empathy				Saps health from enemies near you
+Focus				Doubles offense and cooldown time for basic attack
+Futuristic			Doubles speed at which uber attack regenerates
+Harmony				Shoots multiple, smaller, weaker shots
+Ideation			Cuts cooldown time in half
+Includer			Enemies get pushed in the opposite direction you're moving
+Individualization	Applies a random multiplier [1, 3] to your attacks
+Input				Damages enemies when you're damaged
+Intellection		Attacks go through enemies
+Learner				Increases defense the more enemies there are
+Maximizer			Doubles distance projectiles travel
+Positivity			Increases speed and slowly heals you
+Relator				Increase speed the more enemies there are
+Responsibility		Damages enemies on touch
+Restorative			OP healing power
+Self-Assurance		Doubles defense
+Significance		Increases size of attacks
+Strategic			Decreases size of attacks, increases offense and speed of attacks
+Woo					Doubles speed

@@ -1,0 +1,116 @@
+<head>
+	<title>GetHIP</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	
+	<style>
+	body {
+		background-color: #444;
+	}
+	canvas {
+		background-color: #CCC;
+		border:3px solid #AAA;
+		margin: 20px;
+	}
+	h1 {
+		color:#EEAF30;
+	}
+
+	.navbar {
+		box-shadow: 0px 2px 8px black;
+	}
+	.nav a {
+		color:#EEAF30;
+	}
+	.nav li a {
+		transition-duration: 0.4s;
+	}
+	.nav li a:hover {
+		color:#595B5C;
+		background-color:#FCD450;
+	}
+	.nav li a:focus {
+		color:#595B5C;
+		background-color:#EEAF30;
+	}
+	.jumbotron, .panel, .panel-default>.panel-heading, .panel ul li,
+		.table, .table tbody tr td, .table thead tr th {
+		color:#EEAF30;
+		background-color: #444;
+		border-color:#222;
+	}
+	.table tbody tr td {
+		padding: 10px;
+	}
+
+	.inputfile {
+		width: 0.1px;
+		height: 0.1px;
+		opacity: 0;
+		overflow: hidden;
+		position: absolute;
+		z-index: -1;
+	}
+
+	.custombutton {
+		color: white;
+		padding: 8px;
+		background-color: #61C250;
+		border-color: #57AD48;
+		border-radius: 4px;
+		border-style: solid;
+		border-width: 1px;
+		cursor: pointer;
+		font-size: 14px;
+		font-weight: 400;
+	}
+	label.custombutton:hover {
+		background-color: #007934;
+	}
+	label.custombutton:active {
+		background-color: #275937;
+	}
+	.warningLabelVisible {
+		color: red;
+		transition-duration: 0.4s;
+		opacity: 1.0;
+		/* max-height is set to an arbitrarily large value */
+		max-height: 999999px;
+	}
+	.warningLabelInvisible {
+		color: red;
+		transition-duration: 0.4s;
+		opacity: 0.0;
+		overflow: hidden;
+		max-height: 0px;
+	}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar" style="background-color:#595B5C">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/" style="color: #EEAF30">Strengths Fighter</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="/" id="HomeLink">Home</a></li>
+				<li><a href="/guide" id="GuideLink">Guide</a></li>
+				{{#if currentUser}}
+				<li><a href="/game" id="GameLink">Game</a></li>
+				{{/if}}
+				<li><a href="/leaderboard" id="LeaderboardLink">Leaderboard</a></li>
+				<li><span style="float: right; padding:15px">{{> loginButtons}}</span></li>
+			</ul>
+		</div>
+	</nav>
+</body>
+
+<template name="strengths">
+	<select class="form-control" name="Events" style="margin-left: 20px; margin-right: 20px;" id="Strength {{index}}">
+		{{#each strengths}}
+		<option value="{{strength}}">{{strength}}</option>
+		{{/each}}
+	</select>
+</template>

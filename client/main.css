@@ -1,0 +1,20 @@
+/* CSS declarations go here */
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.animated {
+	opacity: 0.0;
+	transition: opacity 10000ms ease;
+}
+
+.unanimated {
+	opacity: 1.0;
+	transition: opacity 10000ms ease;
+}

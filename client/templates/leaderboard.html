@@ -1,0 +1,36 @@
+<template name="leaderboard">
+	<h1 align="center">Leaderboard</h1>
+	<table class="table">
+		<thead>
+			<tr>
+				<th style="padding-left:20px">User</th>
+				<th>Score</th>
+				<th>Strengths</th>
+				<th>Place</th>
+			</tr>
+		</thead>
+		<tbody>
+		{{#each scores}}
+		<tr>
+			<td style="padding-left:20px; color: {{color}};">{{userId}}</td>
+			<td style="color: {{color}};">{{score}}</td>
+			<!--td><span style="white-space: pre-wrap;">{{strengths}}</span></td-->
+			<td style="color: {{color}};">{{strength1}} &nbsp; &nbsp; &nbsp; {{strength2}} &nbsp; &nbsp; &nbsp; {{strength3}} &nbsp; &nbsp; &nbsp; {{strength4}} &nbsp; &nbsp; &nbsp; {{strength5}}</td>
+			<td style="color: {{color}};">{{place}}</td>
+		</tr>
+		<!--tr>
+			<td>{{strength2}}</td>
+		</tr>
+		<tr>
+			<td>{{strength3}}</td>
+		</tr>
+		<tr>
+			<td>{{strength4}}</td>
+		</tr>
+		<tr>
+			<td>{{strength5}}</td>
+		</tr-->
+		{{/each}}
+		</tbody>
+	</table>
+</template>

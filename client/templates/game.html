@@ -1,0 +1,17 @@
+<template name="game">
+	<div align="center">
+		<canvas width="640" height="480" id="canvas"></canvas>
+	</div>
+	<div align="center" id="superDiv">
+		<button class="btn btn-primary">Begin</button>
+		<button class="btn btn-info">Pause</button>
+	</div>
+	<div style="padding: 20px">
+		<div class="col-xs-2">{{> strengths index="1"}}</div>
+		<div class="col-xs-2">{{> strengths index="2"}}</div>
+		<div class="col-xs-2">{{> strengths index="3"}}</div>
+		<div class="col-xs-2">{{> strengths index="4"}}</div>
+		<div class="col-xs-2">{{> strengths index="5"}}</div>
+		<div class="col-xs-6"></div>
+	</div>
+</template>
